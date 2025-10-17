@@ -10,7 +10,7 @@ const swcJestConfig = JSON.parse(
 swcJestConfig.swcrc = false;
 
 export default {
-  displayName: '@backendcampusmart/my-new-app',
+  displayName: '@backendcampusmart/api-gateway',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

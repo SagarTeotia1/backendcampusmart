@@ -1,5 +1,5 @@
 {
-  "name": "@backendcampusmart/my-new-app",
+  "name": "@backendcampusmart/community-service",
   "version": "0.0.1",
   "private": true,
   "nx": {
@@ -12,15 +12,15 @@
         "defaultConfiguration": "production",
         "options": {
           "platform": "node",
-          "outputPath": "apps/my-new-app/dist",
+          "outputPath": "apps/community-service/dist",
           "format": [
             "cjs"
           ],
           "bundle": false,
-          "main": "apps/my-new-app/src/main.ts",
-          "tsConfig": "apps/my-new-app/tsconfig.app.json",
+          "main": "apps/community-service/src/main.ts",
+          "tsConfig": "apps/community-service/tsconfig.app.json",
           "assets": [
-            "apps/my-new-app/src/assets"
+            "apps/community-service/src/assets"
           ],
           "esbuildOptions": {
             "sourcemap": true,
@@ -48,8 +48,8 @@
         "cache": true,
         "executor": "@nx/js:prune-lockfile",
         "outputs": [
-          "{workspaceRoot}/apps/my-new-app/dist/package.json",
-          "{workspaceRoot}/apps/my-new-app/dist/package-lock.json"
+          "{workspaceRoot}/apps/community-service/dist/package.json",
+          "{workspaceRoot}/apps/community-service/dist/package-lock.json"
         ],
         "options": {
           "buildTarget": "build"
@@ -61,7 +61,7 @@
         ],
         "cache": true,
         "outputs": [
-          "{workspaceRoot}/apps/my-new-app/dist/workspace_modules"
+          "{workspaceRoot}/apps/community-service/dist/workspace_modules"
         ],
         "executor": "@nx/js:copy-workspace-modules",
         "options": {
@@ -83,15 +83,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@backendcampusmart/my-new-app:build",
+          "buildTarget": "@backendcampusmart/community-service:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@backendcampusmart/my-new-app:build:development"
+            "buildTarget": "@backendcampusmart/community-service:build:development"
           },
           "production": {
-            "buildTarget": "@backendcampusmart/my-new-app:build:production"
+            "buildTarget": "@backendcampusmart/community-service:build:production"
           }
         }
       },

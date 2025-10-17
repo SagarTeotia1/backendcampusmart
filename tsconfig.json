@@ -8,6 +8,30 @@
     },
     {
       "path": "./apps/my-new-app"
+    },
+    {
+      "path": "./apps/api-gateway-e2e"
+    },
+    {
+      "path": "./apps/api-gateway"
+    },
+    {
+      "path": "./apps/auth-service-e2e"
+    },
+    {
+      "path": "./apps/auth-service"
+    },
+    {
+      "path": "./apps/user-service-e2e"
+    },
+    {
+      "path": "./apps/user-service"
+    },
+    {
+      "path": "./apps/community-service-e2e"
+    },
+    {
+      "path": "./apps/community-service"
     }
   ]
 }

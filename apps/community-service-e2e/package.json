@@ -1,0 +1,26 @@
+{
+  "name": "@backendcampusmart/community-service-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@backendcampusmart/community-service"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/community-service-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@backendcampusmart/community-service:build",
+          "@backendcampusmart/community-service:serve"
+        ]
+      }
+    }
+  }
+}

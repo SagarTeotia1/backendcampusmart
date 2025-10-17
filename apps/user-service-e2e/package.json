@@ -1,10 +1,10 @@
 {
-  "name": "@backendcampusmart/my-new-app-e2e",
+  "name": "@backendcampusmart/user-service-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
     "implicitDependencies": [
-      "@backendcampusmart/my-new-app"
+      "@backendcampusmart/user-service"
     ],
     "targets": {
       "e2e": {
@@ -13,12 +13,12 @@
           "{projectRoot}/test-output/jest/coverage"
         ],
         "options": {
-          "jestConfig": "apps/my-new-app-e2e/jest.config.ts",
+          "jestConfig": "apps/user-service-e2e/jest.config.ts",
           "passWithNoTests": true
         },
         "dependsOn": [
-          "@backendcampusmart/my-new-app:build",
-          "@backendcampusmart/my-new-app:serve"
+          "@backendcampusmart/user-service:build",
+          "@backendcampusmart/user-service:serve"
         ]
       }
     }
